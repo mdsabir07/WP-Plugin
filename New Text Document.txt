@@ -1,0 +1,133 @@
+The first line is the ‘Plugin Name’ and will appear in the WordPress Plugin Directory as your plugin’s title.
+
+The next line is ‘Contributors’. These are the WordPress.org user IDs responsible for managing your plugin. If you don’t already have a user ID, then you’ll need to create a free WordPress.org user account.
+
+The ‘Requires at least’ and ‘Tested up to’ fields refer to the WordPress versions your plugin works with. The ‘Stable tag’ is the version of your own plugin.
+
+You can leave the License fields the same. Then, you should edit the ‘Description’ area to explain what your plugin does.
+
+After editing your plugin’s readme file, don’t forget to save your changes. It’s also a good idea to run the file through the official Readme Validator and address any issues that are identified.
+
+Finally, you should right click on your plugin folder and create a zip file. Mac users should select ‘Compress pluginname’ and Windows users can select ‘Send to » Compressed (zipped) folder’.
+https://prnt.sc/03LqhQt24XaM
+
+Submitting Your Plugin to the Directory for Review
+Now your plugin is ready to be reviewed by WordPress.org’s plugins team.
+
+To submit it, visit the Add Your Plugin page. If you are not already logged in, then click on the login button at the top right corner of the screen.
+https://prnt.sc/Igusef0mVU03
+
+Once logged in, you’ll be able to upload and submit your plugin for review.
+
+Simply click on the Select File button to select your plugin’s zip file, and then click on the Upload button.
+https://prnt.sc/YH-jQu2bDO19
+
+The WordPress.org plugin review team will then take a look at your plugin code for common errors and security checks. Once approved, you’ll receive an email from the plugins team.
+
+This email will contain a link to the Subversion (SVN) repository where your plugin will be hosted on WordPress.org. You will need to use this link when you upload your plugin.
+
+Uploading Your Plugin Using Subversion (SVN)
+Once your plugin is approved, you will need to use Subversion (SVN) to upload the plugin.
+
+Subversion is an open source version control system. It allows users to make changes to files and directories while keeping a record of changes, managing different versions, and collaborating with other users.
+
+You’ll need an SVN client installed on your computer to upload your plugin. Windows users can use SilkSVN or TortoiseSVN (free). Mac users can install SmartSVN or the Versions app on their computers.
+
+In this article, we will use the Versions app for Mac. However, the process is very similar in all the SVN apps listed above.
+
+Once installed, you need to open the Versions app and check out a copy of your WordPress plugin’s repository. To do that, simply click on the ‘New Repository Bookmark’ button.
+https://prnt.sc/59FG04h0wsWk
+
+This will bring up a popup where first you need to provide a name for this bookmark. You can name it after your plugin. After that, you need to add your WordPress plugin’s SVN repository URL.
+
+You can leave the username and password fields blank.
+https://prnt.sc/q6jUsq2Omv3D
+
+Now you should click the Create button. Versions will connect with your repository and download a copy of your plugin’s repository to your computer.
+
+Next, you need to right click on the repository name in the browser view and then select ‘Checkout’.
+https://prnt.sc/l4WVNN9Ql8XO
+
+You will be asked to provide a name for the folder and select a location where you want to store it on your computer. You can use the same folder name as your plugin directory and click on checkout button to continue.
+
+The Versions app will now create the folders needed for your plugin on your computer. You can view it under your plugin’s repository or browse it in Finder.
+https://prnt.sc/08D75CCsC90u
+
+Now you need to copy your plugin files and paste them inside the trunk folder of your local repository.
+
+As you do that, you will notice a question mark icon next to new files in the Versions app.
+
+Since these files didn’t exist before, you need to add them. Select the new files and click on the Add button to add these files to your local folder.
+https://prnt.sc/L3wRFu3GMytw
+
+Now that your plugin files are added into Subversion, you are ready to upload them. You do this by syncing changes in your local folder and the subversion directory.
+
+You should click on your local repository to select it and then click on the Commit icon.
+https://prnt.sc/CNE1Mc846vIP
+
+A new popup will appear and you will see the list of changes and a box to add a commit message. Once you click the Commit button, the Versions app will sync your changes and commit them to your plugin’s repository.
+https://prnt.sc/qaMudKmy2FLq
+
+Now that you have uploaded your plugin files to the trunk, it’s time to tag them to a version.
+
+Go to the local copy of your plugin and copy the files inside the trunk folder. After that, you need to open the tags folder and create a new folder inside it.
+
+Name this folder with a version name. Make sure that it matches the version you have entered in your plugin’s header. In the sample code above, we have used version 1.0 for our plugin.
+
+After adding the 1.0 folder you need to paste your plugin files inside. Since this is a new folder, you will also need to click on the Add button to include the folder and all its files in the repository.
+https://prnt.sc/8aUHlcJMp9FB
+
+After that, you can go ahead and click on the Commit icon to sync your changes as you did earlier. You can now visit the WordPress Plugins Directory and preview your plugin.
+
+Whenever you need to edit your plugin files, you should edit the local copy. Once you are done with your changes, simply click on the Commit icon to sync them with the WordPress Plugin Directory.
+
+When you’ve made major changes to your plugin, you’ll want to add a new version by adding a new folder with that version number to the tags folder. Make sure that the version number matches your plugin’s header.
+Adding Artwork to the WordPress Plugin Directory
+https://prnt.sc/FWNBAQ3yewvi
+
+
+Now we can add some artwork and screenshots to the WordPress Plugin Directory. These items need to follow standard naming practices and should be uploaded using Subversion.
+
+Plugin Header Banner
+
+The header banner is the large image that appears on top of the plugin page. Its size should be 772×250 or 1544×500 pixels and you should use the JPEG or PNG file format.
+
+Depending on the size of your image and the file type, you’ll need to give your header banner one of these names:
+
+banner-772×250.jpg
+banner-772×250.png
+banner-1544×500.jpg
+banner-1544×500.png
+Plugin Icon
+
+The icon is a smaller square image and will be displayed in search results and plugin listings. Its size should be 125×125 or 250×250 pixels and you should use the JPEG or PNG file format.
+
+Depending on the size of your image and the file type, you’ll need to give your icon one of these names:
+
+icon-128×128.jpg
+icon-128×128.png
+icon-256×256.jpg
+icon-256×256.png
+Screenshots
+
+You can add as many screenshots as you like. These screenshots should be listed in the screenshot descriptions in your readme.txt file.
+
+Screenshot files should be named like this:
+
+screenshot-1.png
+screenshot-2.png
+Once you have prepared all the artwork, you can place them into the assets folder of your plugin’s local copy.
+
+After that, you will notice a question mark icon next to the assets folder. You’ll need to click on the Add button to add new assets file into your repository.
+https://prnt.sc/JZC-94y7YXNd
+
+Finally, go ahead and click on the Commit icon to upload your files to the WordPress Plugin Directory. After a while, you will be able to see the artwork appear on your plugin page.
+https://prnt.sc/KVK1Pe3JBewk
+
+We hope this tutorial helped you learn how to add your plugin to the WordPress Plugin Directory.
+
+You may also want to learn the right way to create an email newsletter, or check out our pick of must have plugins that WordPress users find helpful.
+
+
+https://wordpress.org/plugins/developers/add/
+
